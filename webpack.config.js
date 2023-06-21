@@ -9,6 +9,9 @@ module.exports = {
     filename: 'bundle.js',
   },
 
+  devServer: {
+    static: path.resolve(__dirname, './dist'),
+  },
   // Autres règles et plugins Webpack...
 
 

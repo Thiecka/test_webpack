@@ -13,9 +13,9 @@
 /*!******************!*\
   !*** ./index.js ***!
   \******************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (() => {
 
-eval("const http = __webpack_require__(/*! http */ \"?82ea\");\r\n\r\nconst hostname = '127.0.0.1';\r\nconst port = 8080;\r\n\r\nconst server = http.createServer((req, res) => {\r\n  res.statusCode = 200;\r\n  res.setHeader('Content-Type', 'text/plain');\r\n  res.end('Bonjour sur mon serveur');\r\n});\r\n\r\nserver.listen(port, hostname, () => {\r\n  console.log(`Server running at http://${hostname}:${port}/`);\r\n});\n\n//# sourceURL=webpack://test_webpack/./index.js?");
+eval("console.log('Projet Webpack!');\n\n//# sourceURL=webpack://test_webpack/./index.js?");
 
 /***/ }),
 
@@ -66,17 +66,7 @@ eval("// Copyright Joyent, Inc. and other Node contributors.\n//\n// Permission 
   \***************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var __dirname = \"/\";\n// webpack.config.js\r\nconst path = __webpack_require__(/*! path */ \"./node_modules/path/path.js\");\r\n\r\nmodule.exports = {\r\n  mode: 'development', \r\n  entry: './index.js',\r\n  output: {\r\n    path: path.resolve(__dirname, 'dist'),\r\n    filename: 'bundle.js',\r\n  },\r\n\r\n  // Autres règles et plugins Webpack...\r\n\r\n\r\n  resolve: {\r\n    fallback: {\r\n      \"http\": false,\r\n    },\r\n  },\r\n};\r\n\n\n//# sourceURL=webpack://test_webpack/./webpack.config.js?");
-
-/***/ }),
-
-/***/ "?82ea":
-/*!**********************!*\
-  !*** http (ignored) ***!
-  \**********************/
-/***/ (() => {
-
-eval("/* (ignored) */\n\n//# sourceURL=webpack://test_webpack/http_(ignored)?");
+eval("var __dirname = \"/\";\n// webpack.config.js\r\nconst path = __webpack_require__(/*! path */ \"./node_modules/path/path.js\");\r\n\r\nmodule.exports = {\r\n  mode: 'development', \r\n  entry: './index.js',\r\n  output: {\r\n    path: path.resolve(__dirname, 'dist'),\r\n    filename: 'bundle.js',\r\n  },\r\n\r\n  devServer: {\r\n    static: path.resolve(__dirname, './dist'),\r\n  },\r\n  // Autres règles et plugins Webpack...\r\n\r\n\r\n  resolve: {\r\n    fallback: {\r\n      \"http\": false,\r\n    },\r\n  },\r\n};\r\n\n\n//# sourceURL=webpack://test_webpack/./webpack.config.js?");
 
 /***/ })
 
