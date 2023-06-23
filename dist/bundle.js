@@ -66,7 +66,7 @@ eval("// Copyright Joyent, Inc. and other Node contributors.\n//\n// Permission 
   \***************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var __dirname = \"/\";\n// webpack.config.js\nconst path = __webpack_require__(/*! path */ \"./node_modules/path/path.js\");\n\nmodule.exports = {\n  mode: 'development', \n  entry: './index.js',\n  output: {\n    path: path.resolve(__dirname, 'dist'),\n    filename: 'bundle.js',\n    //test1\n  },\n\n  devServer: {\n    static: path.resolve(__dirname, './dist'),\n  },\n  // Autres règles et plugins Webpack...\n\n\n  resolve: {\n    fallback: {\n      \"http\": false,\n    },\n  },\n};\n\n\n//# sourceURL=webpack://test_webpack/./webpack.config.js?");
+eval("var __dirname = \"/\";\n// webpack.config.js\n//test webpack\nconst path = __webpack_require__(/*! path */ \"./node_modules/path/path.js\");\n\nmodule.exports = {\n  mode: 'development', \n  entry: './index.js',\n  output: {\n    path: path.resolve(__dirname, 'dist'),\n    filename: 'bundle.js',\n    //test1\n  },\n\n  devServer: {\n    static: path.resolve(__dirname, './dist'),\n  },\n  // Autres règles et plugins Webpack...\n\n\n  resolve: {\n    fallback: {\n      \"http\": false,\n    },\n  },\n};\n\n\n//# sourceURL=webpack://test_webpack/./webpack.config.js?");
 
 /***/ }),
 
