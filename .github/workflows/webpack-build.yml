@@ -41,7 +41,7 @@ jobs:
         run: |
           git add ./dist/bundle.js
           git commit -m "Add bundle.js"
-          git push https://github.com/Thiecka/test_webpack/ 
+          git push https://github.com/Thiecka/test_webpack/  
 
 
        
