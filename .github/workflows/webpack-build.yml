@@ -20,10 +20,10 @@ jobs:
 
 
 
-     # - name: Set up Git
-      #  run: |
-       #     git config --global user.name "DieAissatouSegula"
-        #    git config --global user.email "dieaissatou.dieng@segula.fr"    
+      - name: Set up Git
+        run: |
+            git config --global user.name "DieAissatouSegula"
+            git config --global user.email "dieaissatou.dieng@segula.fr"    
 
       - name: Install dependencies
         run: npm install
@@ -41,7 +41,7 @@ jobs:
         run: |
           git add ./dist/bundle.js
           git commit -m "Add bundle.js"
-          git push https://github.com/Thiecka/test_webpack/  
+          git push https://github.com/Thiecka/test_webpack/ 
 
 
        
