@@ -29,3 +29,13 @@ jobs:
       - name: run 
         run: npm run build
 
+
+      - name: Commit and push bundle
+        run: |
+          git add path/to/bundle.js
+          git commit -m "Add bundle.js"
+          git push  
+
+
+       
+
