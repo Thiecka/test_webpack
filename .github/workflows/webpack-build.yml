@@ -32,7 +32,7 @@ jobs:
 
       - name: Commit and push bundle
         run: |
-          git add path/to/bundle.js
+          git add ./dist/bundle.js
           git commit -m "Add bundle.js"
           git push  
 
