@@ -15,7 +15,7 @@
   \******************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("const http = __webpack_require__(/*! http */ \"?82ea\");\n\n//bonjour\n\nconst hostname = '127.0.0.1';\nconst port = 8080;\n\nconst server = http.createServer((req, res) => {\n  res.statusCode = 200;\n  res.setHeader('Content-Type', 'text/plain');\n  res.end('Bonjour');\n});\n\nserver.listen(port, hostname, () => {\n  console.log(`Server running at http://${hostname}:${port}/`);\n});\n\n//# sourceURL=webpack://test_webpack/./index.js?");
+eval("const http = __webpack_require__(/*! http */ \"?82ea\");\n\n//bonjour\n\nconst hostname = '127.0.0.1';\nconst port = 8080;\n\nconst server = http.createServer((req, res) => {\n  res.statusCode = 200;\n  res.setHeader('Content-Type', 'text/plain');\n  res.end('Bonjour');\n});\n//Bien vu\n\nserver.listen(port, hostname, () => {\n  console.log(`Server running at http://${hostname}:${port}/`);\n});\n\n//# sourceURL=webpack://test_webpack/./index.js?");
 
 /***/ }),
 
