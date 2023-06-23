@@ -22,7 +22,7 @@ jobs:
 
       - name: Set up Git
         run: |
-            git config --global user.name "Aissatou"
+            git config --global user.name "DieAissatouSegula"
             git config --global user.email "dieaissatou.dieng@segula.fr"    
 
       - name: Install dependencies
